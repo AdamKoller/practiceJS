@@ -3,4 +3,5 @@ var result = "";
 result += "My " + myNoun + " is really " + myAdjective + ".";
 return result;
 }
-document.write(wordBlanks('dog','big'));
+document.write(wordBlanks('dog','nice'));
+

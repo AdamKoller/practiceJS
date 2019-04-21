@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Functions</title>
+  </head>
+  <body style='font-size: 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(http://wallpaperswide.com/download/geiranger_norway-wallpaper-5120x2880.jpg);background-size: cover;background-position: center;background-attachment: fixed;color:white;'>
+    <div align='center'>
+      <h1> PRACTICE FUNCTIONS </h1>
+
+      <script>
+        function myFunction() {
+          var str = 'This is a function!';
+          return str;
+        }
+        document.write(myFunction());
+      </script>
+<br>
+<br>
+      <script>
+        function myFunctionWithArguments(a,b,c) {
+          var str = a + b + c;
+          return str;
+        }
+        document.write(myFunctionWithArguments(1,2,3));
+      </script>
+<br>
+<br>
+      <script>
+          var myGlobal = 10; //this is a GLOBAL variable; defined OUTSIDE function
+          var oopsGlobal;
+          function fun1() {
+            var output = "";
+            if (typeof myGlobal != 'undefuned') {
+              output += 'myGlobal: ' + myGlobal;
+            }
+            if (typeof oopsGlobal != 'undefined') {
+              output += 'oopsGlobal: ' + oopsGlobal;
+            }
+            return output;
+          }
+          document.write(fun1());
+      </script>
+<br>
+<br>
+      <script>
+        var myClothes = 'shirt';
+        function myOutfit() {
+          var myClothes = 'hat'; // this is a LOCAL variable;defined INSIDE function; takes precedence over global variables
+          return myClothes;
+        }
+        document.write(myOutfit());
+      </script>
+    </div>
+  </body>
+</html>

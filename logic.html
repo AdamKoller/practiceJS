@@ -44,6 +44,22 @@
         }
         document.write(testEqual(8));
       </script>
+      
+      <br>
+
+      <!-- the strict equality === is the opposite of ==
+      does not perform a type conversion
+      1 === 1 // true
+      1 === '1' // false -->
+      <script>
+        function strictTest(val) {
+          if (val === 16) {
+            return 'Equal';
+          }
+          return 'Not Equal'
+        }
+        document.write(strictTest('16'));
+      </script>
 
       <br>
     </div>

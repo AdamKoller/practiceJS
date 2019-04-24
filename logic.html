@@ -111,7 +111,14 @@
       if number to the left is greater/less than number to right, return true
       5 > 3 // true
       7 > '3' // false
-      '1' > 9 // false-->
+      '1' > 9 // false
+      6 >= 6 // true
+      7 >= 9 // false
+      2 < 5 //true
+      5 < 3 // false
+      8 <= 8 // true
+      3 <= 6 // true
+      '8' <= 4 // false-->
       <script>
         function testGreaterThan(val) {
           if (val > 100) {
@@ -123,6 +130,45 @@
           return 'Less than 10';
         }
         document.write(testGreaterThan(68));
+      </script>
+      <br>
+      <script>
+        function testGreaterThanOrEqual(val) {
+          if (val >= 20) {
+            return 'Greater than or equal to 20';
+          }
+          if (val >= 10) {
+            return 'Greater than or equal to 10';
+          }
+          return 'Less than 10';
+        }
+        document.write(testGreaterThanOrEqual(38));
+      </script>
+      <br>
+      <script>
+        function testLessThan(val) {
+          if (val < 30) {
+            return 'Under 30';
+          }
+          if (val < 60) {
+            return 'Under 60';
+          }
+          return '60 or Over';
+        }
+        document.write(testLessThan(76));
+      </script>
+      <br>
+      <script>
+        function testLessThanOrEqual(val) {
+          if (val <= 12) {
+            return "Smaller than or equal to 12";
+          }
+          if (val <= 24) {
+            return "Smaller than of equal to 24";
+          }
+          return "More than 24";
+        }
+        document.write(testLessThanOrEqual(24));
       </script>
 
       <br>

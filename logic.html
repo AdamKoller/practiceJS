@@ -104,6 +104,26 @@
         }
         document.write(strictInequality('43'));
       </script>
+      
+      <br>
+
+      <!-- greater than/less than compares values fo two numbers
+      if number to the left is greater/less than number to right, return true
+      5 > 3 // true
+      7 > '3' // false
+      '1' > 9 // false-->
+      <script>
+        function testGreaterThan(val) {
+          if (val > 100) {
+            return 'Greater than 100';
+          }
+          if (val > 10) {
+            return 'Greater than 10';
+          }
+          return 'Less than 10';
+        }
+        document.write(testGreaterThan(68));
+      </script>
 
       <br>
     </div>

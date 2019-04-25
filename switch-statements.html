@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>switches</title>
+  </head>
+  <body style="font-size:20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://wallpaper.wiki/wp-content/uploads/2017/05/Photos-HD-Bamboo-Wallpapers.jpg);background-size: cover;background-position: center;background-attachment: fixed;color:white;">
+    <div align='center'>
+      <h1>Switch Statements</h1>
+
+      <!-- use a stich statement to choose from different options
+      tests value and can have many case statements which define different possible values
+      statements are executed from the first matched case until a break is found
+      tested with strict operators
+      if break is omitted, the next statement will be exectued-->
+      <script>
+        function caseInSwitch(val) {
+          var answer = "";
+
+          switch (val) {
+            case 1:
+              answer = 'alpha';
+              break;
+            case 2:
+              answer = 'beta';
+              break;
+            case 3:
+              answer = 'gamma';
+              break;
+            case 4:
+              answer = 'delta';
+              break;
+          }
+          return answer;
+        }
+        document.write(caseInSwitch(3));
+      </script>
+    </div>
+  </body>
+</html>

@@ -261,6 +261,43 @@
           }
           document.write(chainedIfElseStatements(9));
         </script>
+      
+              <br>
+        <!-- write a function for a golf game in which a score is returned
+        STROKES      RETURN
+        1            'hole in one'
+        <=par -2     'eagle'
+        par -1       'birdie'
+        par          'par'
+        par +1       'bogey'
+        par +2       'double bogey'
+        >= par +3    'you suck,go home'  -->
+        <script>
+          function golfGame(par,strokes) {
+            if (strokes == 1) {
+              return "Hole in one baby!";
+            }
+            else if (strokes <= par-2) {
+              return "Eagle";
+            }
+            else if (strokes == par-1) {
+              return "Birdie";
+            }
+            else if (strokes == par) {
+              return "Par"
+            }
+            else if (strokes == par+1) {
+              return "Bogey";
+            }
+            else if (strokes == par+2) {
+              return "Double Bogey";
+            }
+            else {
+              return "You suck,go home";
+            }
+          }
+          document.write(golfGame(5,3));
+        </script>
 
       <br>
     </div>

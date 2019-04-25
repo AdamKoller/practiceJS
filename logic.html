@@ -170,6 +170,27 @@
         }
         document.write(testLessThanOrEqual(24));
       </script>
+      
+      <br>
+
+      <!-- logical and operator(&&) tests more than one thing at a time
+      returns true if and only both operands are true
+      same thing as:
+        if (num > 5) {
+          if (num < 10) {
+            return "yes";
+          }
+        }
+        return "no"; -->
+        <script>
+          function logicAnd(val) {
+            if (val <=75 && val >= 25) {
+              return "Yup! its between 75 and 25!";
+            }
+            return "Sorry,not between those numbers :-(";
+          }
+          document.write(logicAnd(10));
+        </script>
 
       <br>
     </div>

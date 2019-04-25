@@ -35,6 +35,32 @@
         }
         document.write(caseInSwitch(3));
       </script>
+      
+      <br>
+
+      <!-- you may not be able to specify all possible values as case statements
+      instead, you can add the default statement which will executed if no matching cases are found -->
+      <script>
+        function switchOfStuff(val) {
+          var answer = "";
+          switch (val) {
+            case 'a':
+              answer = 'apple';
+              break;
+            case 'b':
+              answer = 'bird';
+              break;
+            case 'c':
+              answer = 'cat';
+              break;
+            default:
+              answer = 'stuff';
+              break;
+          }
+          return answer;
+        }
+        document.write(switchOfStuff('c'));
+      </script>
     </div>
   </body>
 </html>

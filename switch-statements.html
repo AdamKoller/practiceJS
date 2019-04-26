@@ -61,6 +61,44 @@
         }
         document.write(switchOfStuff('c'));
       </script>
+      
+      <br>
+
+      <!-- if the break is omitted from a statement case, the following case statements are executed until a break is found
+      if you have multiple inputs with the same output, you can represent them like this:
+            switch (val) {
+              case 1:
+              case 2:
+              case 3:
+                result = '1,2, or 3';
+                break;
+              case 4:
+                result = '4 alone'
+          }-->
+      <script>
+        function sequentialSizees(val) {
+          var answer = "";
+          switch (val) {
+            case 1:
+            case 2:
+            case 3:
+              answer = 'Low';
+              break;
+            case 4:
+            case 5:
+            case 6:
+              answer = 'Mid';
+              break;
+            case 7:
+            case 8:
+            case 9:
+              answer = 'High';
+              break;
+          }
+          return answer;
+        }
+        document.write(sequentialSizees(8));
+      </script>
     </div>
   </body>
 </html>

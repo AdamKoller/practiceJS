@@ -99,6 +99,30 @@
         }
         document.write(sequentialSizees(8));
       </script>
+      
+      <br>
+      <!-- if you have many options to choose from, switches can be easier than many if/else statements -->
+      <script>
+        function chainToSwitch(val) {
+          var answer = "";
+          switch (val) {
+            case 'Bob':
+              answer = 'Marley';
+              break;
+            case 'John':
+              answer = 'Lennon';
+              break;
+            case 'Jimi':
+              answer = 'Hendrix';
+              break;
+            case 'Mike':
+              answer = 'Portnoy';
+              break;
+          }
+          return answer
+        }
+        document.write(chainToSwitch('Mike'));
+      </script>
     </div>
   </body>
 </html>

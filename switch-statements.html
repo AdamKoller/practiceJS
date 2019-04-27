@@ -136,6 +136,19 @@
         }
         document.write(isLess(12,10));
       </script>
+      
+      <br>
+
+      <!-- modify the function abTest so that if a or b are less than 0, the function will exit with value of 'undefined' -->
+      <script>
+        function abTest(a,b) {
+          if (a < 0 || b < 0) {
+            return undefined;
+          }
+          return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+        }
+        document.write(abTest(-4,-1));
+      </script>
     </div>
   </body>
 </html>

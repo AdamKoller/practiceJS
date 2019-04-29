@@ -149,6 +149,44 @@
         }
         document.write(abTest(-4,-1));
       </script>
+      
+        <br>
+
+      <!-- write a card counting function. it will recieve a CARD parameter(number or a string) and increment/decrement(++/- -) the global count variable according to the cards value.
+                  Count Change       Cards
+                    +1               2,3,4,5,6
+                    0                7,8,9
+                    -1              10,'J','Q','K','A'
+      The function will then returns string with the current count and the string Bet if the count is positive, or Hold if the count <= 0
+      The current count and the players decision(Bet or Hold) should be seperated by a single space -->
+      <script>
+      var count = 0;
+      function cc(card) {
+        switch(card) {
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+            count ++;
+            break;
+          case 10:
+          case 'J':
+          case 'Q':
+          case 'K':
+          case 'A':
+            count --;
+            break;
+        }
+        if (count > 0) {
+          return count + ' Bet';
+        }
+        else {
+          return count + ' Hold';
+        }
+      }
+      document.write(cc());
+      </script>
     </div>
   </body>
 </html>

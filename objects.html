@@ -19,16 +19,19 @@
       Dot notation is used when you know the name of the property youre trying to access ahead of time
       }-->
       <script>
-        var myDog = {
+        var myPet = {
           'name': 'Harry',
-          'legs': 3,
+          'type': 'chameleon',
+          'legs': 4,
           'tails': 1,
-          'friends': ['Coco','Chewie','Sammie','Sugarbear']
+          'food': 'insects',
+          'hobbies': ['change color','climb trees',' and look in two different directions at once!']
         }
-        var nameValue = myDog.name;
-        var friendsValue = myDog.friends;
+        var nameValue = myPet.name;
+        var typeValue = myPet.type;
+        var foodValue = myPet.food;
 
-        document.write('My name is ' + nameValue + ' and my friends are ' + friendsValue);
+        document.write('My name is ' + nameValue + ', I am a ' + typeValue + ' and like to eat ' + foodValue + '!');
       </script>
 
     </div>

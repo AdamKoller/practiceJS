@@ -194,6 +194,33 @@
           }
           document.write(phoneticLookup("bravo"));
         </script>
+      
+      <br>
+
+        <!-- we can use .hasOwnProperty(propname) method of objects to determine if that object has the given property name:
+          var myObj = {
+          top: 'hat',
+          bottom: 'pants'
+          };
+          myObj.hasOwnProperty('top'); // true
+          myObj.hasOwnProperty('middle') // false -->
+          <script>
+            var myObj = {
+              hobby: 'drums',
+              pet: 'frog',
+              occupation: 'web dev',
+              hair: 'sweet'
+            };
+            function checkObj(checkProp) {
+              if (myObj.hasOwnProperty(checkProp) == true) {
+                return myObj[checkProp];
+              }
+              else {
+                return 'Not Found!';
+              }
+            }
+            document.write(checkObj('occupation'));
+          </script>
     </div>
   </body>
 </html>

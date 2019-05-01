@@ -158,6 +158,42 @@
           }
           delete student.MacBooks;
         </script>
+      
+      <!-- objects can thought of as a key/value storage
+        if you have tabular data, use an object to 'lookup' value rather than a switch statement of if/else chain
+        useful when input data is limited to a range:
+          var alpha = {
+          1: 'Z',
+          2: 'Y',
+          3: 'X',
+          4: 'W',
+          ......
+          24: 'C',
+          25: 'B',
+          26: 'A'
+          };
+          alpha[2]; // 'Y'
+          alpha[24]: // 'C'
+
+          var value = 2;
+          alpha[value]; // 'Y'
+        -->
+        <script>
+        function phoneticLookup(val) {
+          var result = "";
+          var lookup = {
+            "alpha": "Adams",
+            "bravo": "Boston",
+            "charlie": "Chicago",
+            "delta": "Denver",
+            "echo": "Easy",
+            "foxtrot": "Frank"
+          };
+          result = lookup[val];
+          return result;
+          }
+          document.write(phoneticLookup("bravo"));
+        </script>
     </div>
   </body>
 </html>

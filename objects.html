@@ -35,6 +35,42 @@
       </script>
       
       <br>
+      <br>
+
+      <!-- bracket notation can access a property which is stored as the value of a variable.
+      useful for iterating through an objects properties. for example:
+          var dogs = {
+            Fido: "Mutt",
+            Hunter: "Doberman",
+            Max: "German Shepherd"
+            };
+          var myDog = "Hunter";
+          var myBreed = dogs[myDog];
+          console.log(myBreed);
+
+      another way you can use this concept is when the properties name is collected during execution:
+          var someObj = {
+            propName: "John"
+          };
+          function propPrefix(str) {
+          var s = "prop";
+          return s + str;
+          }
+          var someProp = propPrefix("Name");
+          console.log(someObj[someProp]);
+        }-->
+        <script>
+        // use 'pleyerNumber' variable to look up playert 16 in testObj, then assign that name to the player variable
+        var testObj = {
+          8: 'Ripken',
+          24: 'Griffey, Jr',
+          5: 'Pujols',
+          99: 'Clemons'
+        };
+        var playerNumber = 24;
+        var player = testObj[playerNumber];
+        document.write(player);
+        </script>
 
       <!-- bracket notation -->
       <script>

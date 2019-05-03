@@ -304,6 +304,57 @@
               };
               var gloveBoxContents = myStorage.car.inside['glove box'];
             </script>
+      
+        <br>
+            <!-- recall that objects can contain both nested objects and nested arrays
+            similar to accessing nested objects, array bracket notation can be chained to access nested arrays:
+                var ourPets = [
+                  {
+                    animalType: 'cat',
+                    names: [
+                      'Fluffy',
+                      'Tickle',
+                      'Ray'
+                    ]
+                  },
+                  {
+                    animalType: 'lizard',
+                    names: [
+                      'Spike',
+                      'Izzy',
+                      'Io'
+                    ]
+                  }
+                ];
+                ourPets[0].names[1]; // 'Fluffy'
+                ourPets[1].names[2]; // 'Io' -->
+            <script>
+              // retrieve the second flower from the variable myGarden using object dot and array bracket Notation
+              var myGarden = [
+                {
+                  type: 'vegetables',
+                  list: [
+                    'carrots',
+                    'spinach',
+                    'cucumbers',
+                    'beets',
+                    'mushrooms'
+                  ]
+                },
+                {
+                  type: 'flowers',
+                  list: [
+                    'sunflower',
+                    'rose',
+                    'dafadil',
+                    'tulip',
+                    'dandelion'
+                  ]
+                }
+              ];
+              var secondFlower = myGarden[1].list[1];
+              document.write(secondFlower);
+            </script>
     </div>
   </body>
 </html>

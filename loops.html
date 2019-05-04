@@ -24,6 +24,27 @@
           }
         document.write(myArray);
       </script>
+      
+      <br>
+       <!-- FOR loops run 'for' a specific number of times
+      declared with three optional expressions seperated by semicolons:
+        for ([initialization];[condition];[final-expression])
+      initialization is executed one time only beofre loop starts
+      condition is evaluated at the beginning of every loop iteration and continues as long as its true(if condition is false at the start, loop will never execute)
+      final expression is ran at the end of each loop iteration, prior to the next condition check and usually used to increment or decrement your loop counter
+              var ourArray = [];
+              for (var i = 0; i < 5; i ++) {
+                ourArray.push(i);
+              }
+      the above will start with i = 0 and iterate as long as i < 5 is true while incrementing by one after each iteration.
+      ourArray starts off with an empty array([]) and ends with [0,1,2,3,4]-->
+      <script>
+        var myArray = [];
+        for (var i = 1; i < 6; i++) {
+          myArray.push(i);
+        }
+        document.write(myArray);
+      </script>
 
     </div>
   </body>

@@ -78,6 +78,29 @@
           }
             document.write(myArr);
         </script>
+      
+      <br>
+        <!-- if you have a multi dimensional array, uou can use the same previous logic to loop through both the aray and any sub arrays
+          var arr = [
+            [1,2],[3,4],[5,6],[7,8]
+            ];
+          for (var i =0; i < arr.length; i++) {
+            for (var j = 0; j < arr[i].length; j++) {
+            console.log(arr[i][j]);
+          }
+        }-->
+        <script>
+          function multiplyAll(arr) {
+            var product = 1;
+            for (var i = 0; i < arr.length; i ++) {
+              for (var j = 0; j < arr[i].length; j++) {
+                product = product * arr[i][j];
+              }
+            }
+            return product;
+          }
+          document.write(multiplyAll([[1,2],[3,4],[5,6,7]]));
+        </script>
 
     </div>
   </body>
